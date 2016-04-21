@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Diceroller</title>
+        <link rel="stylesheet" type="text/css" href="/static/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/static/main.css"> 
+    </head>
+    <body>
+        <h1>Diceroller!</h1>
+        <form method="post">
+            <button type="submit" class="btn btn-primary" name="roll" value="disadvantage">Disadvantage</button>
+            <button type="submit" class="btn btn-secondary-outline" name="roll" value="normal">Normal</button>
+            <button type="submit" class="btn btn-info" name="roll" value="advantage">Advantage</button>
+        </form>
+        {{result}}
+    </body>
+</html>
