@@ -5,12 +5,21 @@
         <link rel="stylesheet" type="text/css" href="/static/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="/static/main.css"> 
     </head>
-    <body>
+    <body class="container" >
         <h1>Diceroller!</h1>
         <form method="post">
-            <button type="submit" class="btn btn-primary" name="roll" value="disadvantage">Disadvantage</button>
-            <button type="submit" class="btn btn-secondary-outline" name="roll" value="normal">Normal</button>
-            <button type="submit" class="btn btn-info" name="roll" value="advantage">Advantage</button>
+            <div class="form-row">
+                <button type="submit" class="btn btn-danger" name="roll" value="disadvantage">Disadvantage</button>
+                <button type="submit" class="btn btn-secondary" name="sides" value="20">d20</button>
+                <button type="submit" class="btn btn-success" name="roll" value="advantage">Advantage</button>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="btn btn-success" name="sides" value="6">d6</button>
+                <button type="submit" class="btn btn-success" name="sides" value="8">d8</button>
+                <button type="submit" class="btn btn-success" name="sides" value="10">d10</button>
+                <button type="submit" class="btn btn-success" name="sides" value="12">d12</button>
+                <button type="submit" class="btn btn-success" name="sides" value="100">d100</button>
+            </div>
         </form>
         {{result}}
     </body>
